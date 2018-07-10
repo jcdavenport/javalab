@@ -6,7 +6,7 @@ apt install \
 vim \
 terminator \
 git \
-curl \
+wget \
 xfonts-terminus \
 inetutils-ping \
 oracle-java8-installer \
@@ -14,9 +14,9 @@ oracle-java8-set-default \
 libpostgresql-jdbc-java \
 libpostgresql-jdbc-java-doc
 
-curl https://jdbc.postgresql.org/download/postgresql-42.2.2.jar --output /appdata/postgresql-42.2.2.jar
+wget https://jdbc.postgresql.org/download/postgresql-42.2.2.jar -O /appdata/postgresql-42.2.2.jar
 
-curl https://download.jetbrains.com/idea/ideaIC-181.5540.3.tar.gz --output /appdata/ideaIC-181.5540.3.tar.gz
+wget https://download.jetbrains.com/idea/ideaIC-181.5540.3.tar.gz -O /appdata/ideaIC-181.5540.3.tar.gz
 
 cp /appdata/postgresql-42.2.2.jar /usr/share/java
 
